@@ -9,34 +9,40 @@ const Mendhi = () => {
         ></div>
         <div className={"p-2 text-lavender"}>X</div>
       </div>
-      <div className={"text-center text-lightGrey p-10"}>
+      <div className={"text-center text-lightGrey p-10 "}>
         <div className={"font-snell text-lavender text-3xl "}>
-          The Sohi Family
+          The Newlywed Couple
         </div>
         <div className={"font-playfair p-3"}>
-          request the pleasure of your company on this occasion of their beloved
-          daughter & son in law{" "}
+          together with their familes request the pleasure of your company at
+          their wedding reception{" "}
         </div>
         <div className={"font-snell text-lavender text-4xl p-4"}>
           Simerpreet & Ricky
         </div>
 
-        <div className={"font-snell text-lavender p-3 text-3xl"}>Ceremoney</div>
         <div>|</div>
-
         <div className={" font-playfair  p-3"}>
           On Saturday 9th September 2023
         </div>
 
-        <div className={" font-playfair  pb-3"}>9am</div>
+        <div className={" font-playfair  pb-3"}>1:30pm</div>
         <div>|</div>
         <div className={"font-snell text-2xl text-lavender p-3"}>
           To Be Held At
         </div>
 
-        <div className={"font-playfair "}>Guru Nanak Sikh Gurudwara</div>
+        <div className={"font-playfair "}>C.EX COFFS</div>
         <div className={"font-playfair  p-3"}>
-          River St | Woolgoolga | NSW 2456
+          2-6 Vernon St | Coffs Harbour | NSW 2450
+        </div>
+        <div className={"font-snell text-2xl text-lavender p-3"}>
+          Followed By
+        </div>
+
+        <div className={"font-playfair "}>Doli from The Sohi Residence</div>
+        <div className={"font-playfair  p-3"}>
+          23 Clarence Cres | Coffs Harbour | NSW 2450
         </div>
       </div>
     </div>

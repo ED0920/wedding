@@ -16,6 +16,7 @@ module.exports = {
         lavender: "#B2648B",
         butterfly: "#fffbfa",
         blush: "#cd828e",
+        skin: "#fffbfa",
       },
     },
   },
