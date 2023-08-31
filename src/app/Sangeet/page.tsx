@@ -1,13 +1,22 @@
 import React from "react";
+import Image from "next/image";
 
 const Mendhi = () => {
   return (
-    <div className={"bg-butterfly"}>
+    <div>
+      <div id={"hero"} className={"fixed h-screen w-full -z-10 opacity-20"}>
+        <Image
+          src="/SRF.png"
+          alt="Sim and Ricky"
+          layout="responsive"
+          width={1819} // The original width of the image
+          height={2573} // The original height of the image
+        />
+      </div>
       <div className={"flex flex-nowrap"}>
         <div
           className={"font-snell text-lavender pt-4 text-2xl flex-grow"}
         ></div>
-        <div className={"p-2 text-lavender"}>X</div>
       </div>
       <div className={"text-center text-lightGrey p-10"}>
         <div className={"font-snell text-lavender text-3xl "}>

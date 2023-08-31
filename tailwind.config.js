@@ -17,6 +17,7 @@ module.exports = {
         butterfly: "#fffbfa",
         blush: "#cd828e",
         skin: "#fffbfa",
+        chloe: "#cb7c88",
       },
     },
   },

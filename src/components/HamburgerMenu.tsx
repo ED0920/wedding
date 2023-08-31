@@ -10,7 +10,7 @@ const styles = {
     top: "36px",
   },
   bmBurgerBars: {
-    background: "pink",
+    background: "#B2648B",
   },
   bmBurgerBarsHover: {
     background: "#a90000",
@@ -50,12 +50,12 @@ const styles = {
 
 const HamburgerMenu = () => {
   return (
-    <div className={"text-lavender text-3xl w-[20px] h-[20px]"}>
+    <div className={"text-lavender font-playfair text-4xl"}>
       <Menu styles={styles} width={"100%"}>
         <a id="home" href="/">
           Home
         </a>
-        <a id="home" href="/">
+        <a id="home" href="/itinerary">
           Wedding Itinerary
         </a>
         <a id="about" href="/SikhWeddingGuide">

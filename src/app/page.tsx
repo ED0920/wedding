@@ -4,10 +4,10 @@ import React, { useEffect, useState } from "react";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import Image from "next/image";
 
-const MINIMUM_OPACITY = 50;
+const MINIMUM_OPACITY = 90;
 
 function Home() {
-  // const isMobile = useMobile();
+  const isMobile = useMobile();
   const [opacity, setOpacity] = useState("100%");
 
   useEffect(() => {
@@ -40,9 +40,13 @@ function Home() {
           height={2573} // The original height of the image
         />
 
-        {/*<div className={"text-lavender font-snell text-center text-6xl pt-4"}>*/}
-        {/*  Sim & Ricky*/}
-        {/*</div>*/}
+        <div className={"text-lavender font-snell text-center text-6xl pt-20 "}>
+          Sim & Ricky
+        </div>
+        <div className={"text-chloe font-snell text-center text-2xl pt-6"}>
+          {" "}
+          when two become one
+        </div>
       </div>
 
       <section className={"h-screen"} />
@@ -85,14 +89,14 @@ function Home() {
       </section>
 
       {/*Schedule*/}
-      <section className={"h-screen w-full text-center "}>
+      <section id="weddingitinerary" className={"h-screen w-full text-center "}>
         <h1 className={"font-snell text-lavender text-center text-5xl pb-6"}>
           Itinerary{" "}
         </h1>
         <div className={"text-center inline-grid grid-cols-2 gap-0"}>
           <div className={"text-right border-r-3 border-lavender pr-4 pb-2"}>
             <a href={"/Mendhi"}>
-              <h3 className={"font-snell text-lavender text-2xl"}>Mendi</h3>
+              <h3 className={"font-snell text-lavender text-2xl"}>Mendhi</h3>
             </a>
             <div className={"font-playfair text-lightGrey pb-1"}>
               Wednesday 6th September

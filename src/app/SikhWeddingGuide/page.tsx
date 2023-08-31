@@ -1,17 +1,115 @@
 "use client";
 import useMobile from "@/hooks/useMobile";
+import HamburgerMenu from "@/components/HamburgerMenu";
+import Image from "next/image";
+import React, { useState } from "react";
 
 function Home() {
   const isMobile = useMobile();
 
   return (
-    <main className={"flex flex-col bg-butterfly"}>
+    <main id="top" className={"flex flex-col bg-butterfly"}>
+      <HamburgerMenu />
+
       {/*Schedule*/}
       <section
         className={"h-screen w-full text-center "}
         style={{ fontSize: "calc(8px + 2vmin)" }}
       >
-        <h1 className={"font-snell text-lavender text-center text-5xl p-5"}>
+        <h1
+          id="top"
+          className={
+            "font-snell text-lavender text-center text-4xl  pt-16 pl-14 pr-14 pb-3"
+          }
+        >
+          Is this your first Sikh Wedding?{" "}
+        </h1>
+        <section className={"pb-6 font-playfair text-lightGrey "}>
+          <div className={"p-3"}>
+            While we are incredibly honored to have our friends and family join
+            us to celebrate our wedding day, we completely understand that this
+            may be the first time some of you are visiting a Sikh temple and
+            experiencing a Sikh wedding ceremony. We want to make this
+            experience as comfortable as possible, so we've put together a list
+            of helpful points to ease you into the process.{" "}
+          </div>
+
+          <h2 className={"py-3"}>CEREMONY DRESS CODE </h2>
+          <div className={"p-3"}>
+            Semi-formal and conservative attire is required for the ceremony at
+            the temple.
+          </div>
+
+          <div className={"p-3"}>
+            {" "}
+            Our guests will be seated on the floor for the duration of the
+            ceremony, so please dress comfortably. Suits or dress pants with
+            shirts for the gents, below the knee dresses for the ladies. Skirts
+            and pants are suitable too, whatever you are comfortable in. If you
+            are interested in wearing an Indian outfit, we would recommend a
+            kurta or sherwani for the gents & a salwar kameez sharara or
+            anarkali for the ladies.
+          </div>
+
+          <h2 className={"py-3"}>HEADCOVER</h2>
+
+          <div className={"p-3"}>
+            At Sikh wedding ceremonies, both men and women will be required to
+            cover their heads.
+          </div>
+
+          <div className={"p-3"}>
+            {" "}
+            Gents, you will be provided with a rumaal (bandana) to cover your
+            head or you may bring your own. Hats and beanies are not considered
+            acceptable forms of headwear.
+          </div>
+
+          <div className={"p-3"}>
+            {" "}
+            Ladies, we ask that you bring a scarf or shawl also referred to as a
+            dupatta, to cover your head while you are at the temple. If you
+            don't have one readily available, please let us know and this can be
+            provided for you.
+          </div>
+
+          <h2 className={"py-3"}>WEDDING CEREMONY ETIQUETTE</h2>
+
+          <div className={"p-3"}>
+            At a Sikh temple everyone must remove their shoes upon entry. There
+            are plenty of shelves where your shoes can be stowed. Feel free to
+            walk barefoot or in socks during your time at the temple.
+          </div>
+
+          <div className={"p-3"}>
+            When you enter the main prayer room upstairs, you will notice that
+            members of the Sikh Community, will walk towards the altar at the
+            front and bow (matha tek) before the Holy Book (Guru Granth Sahib).
+            They then provide a small monetary donation for the Temple.
+            Non-Sikhs are not obligated to bow or offer a donation. If you wish
+            to participate, you are most welcome to do so. Alternatively, it's
+            completely acceptable to enter and simply take a seat. Men and women
+            sit on opposite sides of the Temple, so please be seated on your
+            appropriate side.
+          </div>
+
+          <div className={"p-3"}> We hope you find this helpful.</div>
+          <div className={"p-3"}>
+            {" "}
+            As always, please do not hesitate to contact us with any questions!{" "}
+          </div>
+
+          <h2 className={"text-lavender font-snell text-2xl pt-2"}>
+            {" "}
+            With love, Sim & Ricky
+          </h2>
+        </section>
+        <h1
+          id="top"
+          className={
+            "font-snell text-lavender text-center text-5xl  pt-6 pl-14 pr-14 pb-4"
+          }
+        >
           Sikh Wedding Guide{" "}
         </h1>
         <div className={"text-center inline-grid grid-cols-2 gap-0"}>
@@ -146,7 +244,9 @@ function Home() {
             className={"text-right border-r-3 border-lavender pr-4 pb-2"}
           ></div>
         </div>
-        <div className={"text-center pt-2 text-lavender py-5"}>Back to Top</div>
+        <div className={"text-center pt-2 text-lavender py-5"}>
+          <a href={"#top"}>Back To Top</a>
+        </div>
       </section>
     </main>
   );
