@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import CenteredItinerary from "@/components/CenteredItinerary";
+import dynamic from "next/dynamic";
 
-const Mendhi = () => {
+const Sangeet = () => {
   return (
     <CenteredItinerary>
       <div className={"text-center text-lightGrey p-10"}>
@@ -43,4 +44,6 @@ const Mendhi = () => {
   );
 };
 
-export default Mendhi;
+export default dynamic(() => Promise.resolve(Sangeet), {
+  ssr: false,
+});

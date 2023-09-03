@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import CenteredItinerary from "@/components/CenteredItinerary";
+import dynamic from "next/dynamic";
 
 const Mendhi = () => {
   return (
@@ -38,4 +39,6 @@ const Mendhi = () => {
   );
 };
 
-export default Mendhi;
+export default dynamic(() => Promise.resolve(Mendhi), {
+  ssr: false,
+});

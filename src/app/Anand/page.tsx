@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import CenteredItinerary from "@/components/CenteredItinerary";
+import dynamic from "next/dynamic";
 
 const Anand = () => {
   return (
@@ -39,4 +40,6 @@ const Anand = () => {
   );
 };
 
-export default Anand;
+export default dynamic(() => Promise.resolve(Anand), {
+  ssr: false,
+});

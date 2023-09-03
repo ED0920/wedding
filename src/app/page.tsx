@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import Image from "next/image";
 import NavMenu from "@/components/NavMenu";
+import dynamic from "next/dynamic";
 
 const MINIMUM_OPACITY = 90;
 
@@ -252,4 +253,6 @@ function Home() {
   );
 }
 
-export default Home;
+export default dynamic(() => Promise.resolve(Home), {
+  ssr: false,
+});

@@ -1,12 +1,10 @@
 "use client";
-import useMobile from "@/hooks/useMobile";
 import React from "react";
 import NavBar from "@/components/NavBar";
 import Background from "@/components/Background";
+import dynamic from "next/dynamic";
 
-function Home() {
-  const isMobile = useMobile();
-
+function SikhWeddingGuide() {
   return (
     <main id="top" className={"flex flex-col "}>
       <div id={"hero"} className={"fixed h-screen w-full -z-10 opacity-10"}>
@@ -14,7 +12,6 @@ function Home() {
       </div>
       <NavBar />
 
-      {/*Schedule*/}
       <section
         className={"h-screen w-full text-center "}
         style={{ fontSize: "calc(8px + 2vmin)" }}
@@ -255,4 +252,6 @@ function Home() {
   );
 }
 
-export default Home;
+export default dynamic(() => Promise.resolve(SikhWeddingGuide), {
+  ssr: false,
+});

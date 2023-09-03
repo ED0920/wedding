@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import NavBar from "@/components/NavBar";
+import dynamic from "next/dynamic";
 
 const ItineraryPage = () => {
   return (
@@ -78,4 +79,6 @@ const ItineraryPage = () => {
   );
 };
 
-export default ItineraryPage;
+export default dynamic(() => Promise.resolve(ItineraryPage), {
+  ssr: false,
+});
