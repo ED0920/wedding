@@ -3,13 +3,19 @@ import useMobile from "@/hooks/useMobile";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import Image from "next/image";
 import React, { useState } from "react";
+import NavMenu from "@/components/NavMenu";
+import NavBar from "@/components/NavBar";
+import Background from "@/components/Background";
 
 function Home() {
   const isMobile = useMobile();
 
   return (
-    <main id="top" className={"flex flex-col bg-butterfly"}>
-      <HamburgerMenu />
+    <main id="top" className={"flex flex-col "}>
+      <div id={"hero"} className={"fixed h-screen w-full -z-10 opacity-10"}>
+        <Background />
+      </div>
+      <NavBar />
 
       {/*Schedule*/}
       <section
@@ -19,7 +25,7 @@ function Home() {
         <h1
           id="top"
           className={
-            "font-snell text-lavender text-center text-4xl  pt-16 pl-14 pr-14 pb-3"
+            "font-snell text-lavender text-center text-5xl  pt-16 pl-14 pr-14 pb-3"
           }
         >
           Is this your first Sikh Wedding?{" "}

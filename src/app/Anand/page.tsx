@@ -1,18 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import NavBar from "@/components/NavBar";
+import Background from "@/components/Background";
 
 const Anand = () => {
   return (
     <div className={""}>
-      <div id={"hero"} className={"fixed h-screen w-full -z-10 opacity-20"}>
-        <Image
-          src="/SRF.png"
-          alt="Sim and Ricky"
-          layout="responsive"
-          width={1819} // The original width of the image
-          height={2573} // The original height of the image
-        />
+      <div id={"hero"} className={"fixed h-screen w-full -z-10 opacity-10"}>
+        <Background />
       </div>
+      <NavBar />
       <div className={"flex flex-nowrap"}>
         <div
           className={"font-snell text-lavender pt-4 text-2xl flex-grow"}

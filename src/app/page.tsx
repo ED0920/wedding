@@ -3,6 +3,7 @@ import useMobile from "@/hooks/useMobile";
 import React, { useEffect, useState } from "react";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import Image from "next/image";
+import NavMenu from "@/components/NavMenu";
 
 const MINIMUM_OPACITY = 90;
 
@@ -25,28 +26,57 @@ function Home() {
 
   return (
     <main id="title" className={"flex flex-col"}>
-      <HamburgerMenu />
+      {isMobile ? <HamburgerMenu /> : <NavMenu />}
 
+      <div
+        className={
+          "text-chloe font-snell text-center align-bottom justify-end text-2xl pt-6"
+        }
+      ></div>
       <div
         id={"hero"}
         className={"fixed h-screen w-full -z-10"}
         style={{ opacity: opacity }}
       >
-        <Image
-          src="/ceremony_cartoon.png"
-          alt="Sim and Ricky"
-          layout="responsive"
-          width={1819} // The original width of the image
-          height={2573} // The original height of the image
-        />
-
-        <div className={"text-lavender font-snell text-center text-6xl pt-20 "}>
-          Sim & Ricky
-        </div>
-        <div className={"text-chloe font-snell text-center text-2xl pt-6"}>
-          {" "}
-          when two become one
-        </div>
+        {isMobile ? (
+          <>
+            <Image
+              src="/ceremony_cartoon.png"
+              alt="Sim and Ricky"
+              layout="responsive"
+              width={1819} // The original width of the image
+              height={2573} // The original height of the image
+            />
+            <div
+              className={"text-lavender font-snell text-center text-6xl pt-20 "}
+            >
+              Sim & Ricky
+            </div>
+            <div className={"text-chloe font-snell text-center text-2xl pt-6"}>
+              {" "}
+              when two become one
+            </div>
+          </>
+        ) : (
+          <div className={"flex items-end h-full"}>
+            <div className={"absolute top-[2%] text-center w-full"}>
+              {/*<div*/}
+              {/*  className={*/}
+              {/*    "text-lavender font-snell text-center text-6xl pt-20 "*/}
+              {/*  }*/}
+              {/*>*/}
+              {/*  Sim & Ricky*/}
+              {/*</div>*/}
+            </div>
+            <Image
+              src="/SimFlower.png"
+              alt="Sim and Ricky"
+              layout="responsive"
+              width={1819} // The original width of the image
+              height={2573} // The original height of the image
+            />
+          </div>
+        )}
       </div>
 
       <section className={"h-screen"} />

@@ -1,17 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import HamburgerMenu from "@/components/HamburgerMenu";
+import NavBar from "@/components/NavBar";
+import Background from "@/components/Background";
 
 const Mendhi = () => {
   return (
     <div>
-      <div id={"hero"} className={"fixed h-screens w-full -z-10 opacity-20"}>
-        <Image
-          src="/SRF.png"
-          alt="Sim and Ricky"
-          layout="responsive"
-          width={1819} // The original width of the image
-          height={2573} // The original height of the image
-        />
+      <NavBar />
+      <div id={"hero"} className={"fixed h-screens w-full -z-10 opacity-10"}>
+        <Background />
       </div>
       <div className={"flex flex-nowrap"}>
         <div

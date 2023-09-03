@@ -1,18 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import NavBar from "@/components/NavBar";
+import Background from "@/components/Background";
 
 const Mendhi = () => {
   return (
     <div>
-      <div id={"hero"} className={"fixed h-screens w-full -z-10 opacity-20"}>
-        <Image
-          src="/SRF.png"
-          alt="Sim and Ricky"
-          layout="responsive"
-          width={1819} // The original width of the image
-          height={2573} // The original height of the image
-        />
+      <div id={"hero"} className={"fixed h-screens w-full -z-10 opacity-10"}>
+        <Background />
       </div>
+      <NavBar />
       <div className={"flex flex-nowrap"}>
         <div
           className={"font-snell text-lavender pt-4 text-2xl flex-grow"}
@@ -41,9 +39,9 @@ const Mendhi = () => {
           To Be Held At
         </div>
 
-        <div className={"font-playfair "}>C.EX COFFS</div>
+        <div className={"font-playfair "}>Coffs Harbour Race Course</div>
         <div className={"font-playfair  p-3"}>
-          2-6 Vernon St | Coffs Harbour | NSW 2450
+          62 Howard St | Coffs Harbour | NSW 2450
         </div>
         <div className={"font-snell text-2xl text-lavender p-3"}>
           Followed By

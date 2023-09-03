@@ -4,10 +4,10 @@ import React from "react";
 const styles = {
   bmBurgerButton: {
     position: "fixed",
-    width: "36px",
-    height: "30px",
-    left: "36px",
-    top: "36px",
+    width: "24px",
+    height: "20px",
+    left: "32px",
+    top: "32px",
   },
   bmBurgerBars: {
     background: "#B2648B",
@@ -55,17 +55,14 @@ const HamburgerMenu = () => {
         <a id="home" href="/">
           Home
         </a>
-        <a id="home" href="/itinerary">
+        <a id="itinerary" href="/itinerary">
           Wedding Itinerary
         </a>
-        <a id="about" href="/SikhWeddingGuide">
+        <a id="sikhweddingguide" href="/SikhWeddingGuide">
           Sikh Wedding Guide
         </a>
-        <a id="contact" href="/Invitations">
+        <a id="invitation" href="/Invitations">
           Invitations
-        </a>
-        <a id="contact" href="/contact">
-          Contact
         </a>
       </Menu>
     </div>
