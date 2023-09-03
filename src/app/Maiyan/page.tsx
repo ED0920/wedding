@@ -1,22 +1,11 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import NavBar from "@/components/NavBar";
-import Background from "@/components/Background";
+import CenteredItinerary from "@/components/CenteredItinerary";
 
 const Mendhi = () => {
   return (
-    <div className={""}>
-      <div id={"hero"} className={"fixed h-screen w-full -z-10 opacity-10"}>
-        <Background />
-      </div>
-      <NavBar />
-      <div className={"flex flex-nowrap"}>
-        <div
-          className={"font-snell text-lavender pt-4 text-2xl flex-grow"}
-        ></div>
-      </div>
-      <div className={"text-center text-lightGrey p-10 "}>
+    <CenteredItinerary>
+      <div className={"text-center text-lightGrey"}>
         <div className={"font-snell text-lavender text-3xl "}>
           The Sohi Family
         </div>
@@ -44,7 +33,7 @@ const Mendhi = () => {
           23 Clarence Cres | Coffs Harbour | NSW 2450
         </div>
       </div>
-    </div>
+    </CenteredItinerary>
   );
 };
 

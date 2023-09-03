@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
 
@@ -14,13 +14,13 @@ const Background = () => {
           width={1819} // The original width of the image
           height={2573} // The original height of the image
         />
-        <div className={"text-lavender font-snell text-center text-6xl pt-20 "}>
-          Sim & Ricky
-        </div>
-        <div className={"text-chloe font-snell text-center text-2xl pt-6"}>
-          {" "}
-          when two become one
-        </div>
+        {/*<div className={"text-lavender font-snell text-center text-6xl pt-20 "}>*/}
+        {/*  Sim & Ricky*/}
+        {/*</div>*/}
+        {/*<div className={"text-chloe font-snell text-center text-2xl pt-6"}>*/}
+        {/*  {" "}*/}
+        {/*  when two become one*/}
+        {/*</div>*/}
       </div>
     );
   } else {

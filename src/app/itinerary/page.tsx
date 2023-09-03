@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import HamburgerMenu from "@/components/HamburgerMenu";
-import NavMenu from "@/components/NavMenu";
 import NavBar from "@/components/NavBar";
 
 const ItineraryPage = () => {
   return (
-    <div className={"bg-butterfly text-center py-2 text-lavender"}>
+    <div className={"bg-butterfly text-center pb-2 text-lavender"}>
       <NavBar />
       <h1 className={"font-snell text-5xl py-16"}> Wedding Itineray </h1>
       <div className={"py-3  m-0 hover:bg-white transition-all"}>

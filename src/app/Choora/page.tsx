@@ -1,22 +1,10 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import HamburgerMenu from "@/components/HamburgerMenu";
-import NavBar from "@/components/NavBar";
-import Background from "@/components/Background";
+import CenteredItinerary from "@/components/CenteredItinerary";
 
 const Mendhi = () => {
   return (
-    <div>
-      <NavBar />
-      <div id={"hero"} className={"fixed h-screens w-full -z-10 opacity-10"}>
-        <Background />
-      </div>
-      <div className={"flex flex-nowrap"}>
-        <div
-          className={"font-snell text-lavender pt-4 text-2xl flex-grow"}
-        ></div>
-      </div>
+    <CenteredItinerary>
       <div className={"text-center text-lightGrey p-10 "}>
         <div className={"font-snell text-lavender text-3xl "}>
           The Sohi Family
@@ -47,7 +35,7 @@ const Mendhi = () => {
           23 Clarence Cres | Coffs Harbour | NSW 2450
         </div>
       </div>
-    </div>
+    </CenteredItinerary>
   );
 };
 
