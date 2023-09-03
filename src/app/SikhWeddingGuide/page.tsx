@@ -1,9 +1,6 @@
 "use client";
 import useMobile from "@/hooks/useMobile";
-import HamburgerMenu from "@/components/HamburgerMenu";
-import Image from "next/image";
-import React, { useState } from "react";
-import NavMenu from "@/components/NavMenu";
+import React from "react";
 import NavBar from "@/components/NavBar";
 import Background from "@/components/Background";
 
