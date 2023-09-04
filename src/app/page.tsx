@@ -97,7 +97,7 @@ function Home() {
         </div>
         <div className={"font-snell text-2xl py-2"}>with</div>
         <h1 className={"font-snell text-lavender text-4xl pt-2 pb-2"}>
-          Ricky Gupreett Singh Johal
+          Ricky Gurpreet Singh Johal
         </h1>
         <div className={"text-lightGrey font-playfair pt-2 pb-2"}>
           Son of Sardar Don Manjeet Singh Johal and Sardarni Jasbir Kaur Johal
@@ -107,7 +107,7 @@ function Home() {
           ON SATURDAY 9TH SEPTEMBER 2023
         </h4>
         <div className={"text-lightGrey font-playfair"}>
-          At Gura Nanak Sikh Gurdwara
+          At Guru Nanak Sikh Gurdwara
         </div>
         <div className={"text-lightGrey font-playfair "}>
           River St | Woolgoolga | NSW 2456
@@ -115,7 +115,7 @@ function Home() {
         <div>|</div>
         <h4 className={"text-lavender font-playfair  pt-2 pb-2"}>PROGRAMME</h4>
         <div className={"text-lightGrey font-playfair"}>
-          Milni 9am | Morning Tea 10am | Anand Karaj 10:30am{" "}
+          Milni 9am | Morning Tea 10am | Anand Karag 10:30am{" "}
         </div>
       </section>
 

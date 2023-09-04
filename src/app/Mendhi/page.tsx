@@ -30,7 +30,7 @@ const Mendhi = () => {
           To Be Held At
         </div>
 
-        <div className={"font-playfair "}>The Sohi Residance</div>
+        <div className={"font-playfair "}>The Sohi Residence</div>
         <div className={"font-playfair  p-3"}>
           23 Clarence Cres | Coffs Harbour | NSW 2450
         </div>
