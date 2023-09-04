@@ -15,7 +15,7 @@ const NavMenu = () => {
 
       <a href="/SikhWeddingGuide"> Sikh Wedding Guide </a>
 
-      <div>Invitations</div>
+      <a href="/Invitations.pdf">Invitations</a>
     </div>
   );
 };

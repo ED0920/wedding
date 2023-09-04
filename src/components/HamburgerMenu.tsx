@@ -61,7 +61,7 @@ const HamburgerMenu = () => {
         <a id="sikhweddingguide" href="/SikhWeddingGuide">
           Sikh Wedding Guide
         </a>
-        <a id="invitation" href="/Invitations">
+        <a id="invitation" href="/Invitations.pdf">
           Invitations
         </a>
       </Menu>
