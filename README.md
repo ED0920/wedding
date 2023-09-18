@@ -15,8 +15,7 @@ Here is a link to the live site :  https://simandricky.com
 
 ## Site
 
-### Landing Page
-Currently it is working on Asia Pacific (Sydney) Region.
+Hosted with AWS amplify.
 
 ![](./public/LandingPage.png)
 
