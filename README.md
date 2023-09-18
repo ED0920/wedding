@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ![Wedding Website](./public/LandingPage.png)
+# Wedding Website
+<table>
+<tr>
+<td>
+The wedding website serves as a digital platform to share important details and updates with guests regarding the wedding celebration.
+</td>
+</tr>
+</table>
 
-## Getting Started
 
-First, run the development server:
+## Live
+Here is a link to the live site :  https://simandricky.com
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Site
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Landing Page
+Currently it is working on Asia Pacific (Sydney) Region.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![](./public/LandingPage.png)
 
-## Learn More
+## Mobile support
+The website is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
-To learn more about Next.js, take a look at the following resources:
+![](./public/LandingMobile.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Built with
 
-## Deploy on Vercel
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript allows us to declare types for variables, functions, parameters, and return values, helping us catch type-related errors during development, offering an additional layer of safety and predictability.
+- [Tailwind](https://tailwindcss.com/) - Tailwind is a CSS framework that streamlines the process of styling and designing web interfaces.
+- [Next.js](https://nextjs.org/) - Next.js is used to simplify serverside redendering and allows us to create API endpoints within the project. 
+- [React](https://react.dev/) - React is used to create the UI interface and  UI components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## To-do
+- Create a transition for the title
+- Create nav bar to include title on small media screens
+
+
+## Team
+
+Github - 
+[Elisa Do](https://github.com/ED0920/wedding) 
+
+
+

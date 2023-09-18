@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 const Sangeet = () => {
   return (
     <CenteredItinerary>
-      <div className={"text-center text-lightGrey p-10"}>
+      <div className={"text-center text-lightGrey"}>
         <div className={"font-snell text-lavender text-3xl "}>
           The Sohi Family
         </div>
